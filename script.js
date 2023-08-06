@@ -35,6 +35,9 @@ const formLanguages = {
 }
 
 
+console.log('git live'
+)
+
 // Function to handle the accept button click
 function acceptLanguage() {
     const languageSelect = document.getElementById('language-select');
