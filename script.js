@@ -35,8 +35,7 @@ const formLanguages = {
 }
 
 
-console.log('git live'
-)
+
 
 // Function to handle the accept button click
 function acceptLanguage() {
@@ -51,6 +50,9 @@ function acceptLanguage() {
 
     // Update the website content based on the selected language
     updateContent();
+
+    console.log('git live'
+    )
 }
 
 // Function to update the website content based on the selected language
