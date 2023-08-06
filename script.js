@@ -34,6 +34,7 @@ const formLanguages = {
 
 }
 
+
 // Function to handle the accept button click
 function acceptLanguage() {
     const languageSelect = document.getElementById('language-select');
@@ -66,6 +67,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const acceptButton = document.getElementById('accept-btn');
     acceptButton.addEventListener('click', acceptLanguage); // Add event listener to the "Accept" button
+
+    const titleElement = document.getElementById('main-title')
+    const embedElement = document.querySelector('.embed-wrapper')
+    embedElement.style.height = `calc(100% - ${titleElement.offsetHeight})`
+
+
+
 
     updateContent();
 });
