@@ -2,60 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./favicon.png">
-    <title>Stop RUcism - Manifesto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!----------------------- LANGUAGE POP-UP ----------------------->
+  <link rel="icon" href="./favicon.png">
+  <title>Stop RUscism Manifesto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <!-- <link href="pdfjs/pdf_viewer.css" rel="stylesheet"> Add this line -->
+
+  <style>
+    /* Add some basic styles to the PDF viewer container */
+    #pdfViewer {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+  <!-- Add the script tag for the pdfjs.js library -->
+  <!-- <script src="pdfjs/pdfjs.js"></script> -->
+<link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
-    <div class="body-wrapper">
-        <div id="language-popup">
-            <div class="popup-content">
-                <p id="popup-title">Select your preferred language to get started</p>
-                <select id="language-select">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="be">Беларускі</option>
-                    <option value="fr">Français</option>
-                    <option value="de">Deutsch</option>
-                    <option value="it">Italiano</option>
-                    <option value="ru">Русский</option>
-                    <option value="ukr">Українська</option>
-                </select>
-                <button id="accept-btn">Accept</button>
-            </div>
+  <div class="body-wrapper">
+    <!----------------------- LANGUAGE POP-UP ----------------------->
+
+    <div id="language-popup">
+      <div class="popup-content">
+        <p id="popup-title">Select your preferred language to get started</p>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="be">Беларускі</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="it">Italiano</option>
+          <option value="ru">Русский</option>
+          <option value="ukr">Українська</option>
+        </select>
+        <button id="accept-btn">Accept</button>
+      </div>
+    </div>
+    <!----------------------- END OF LANGUAGE POP-UP ----------------------->
+
+    <div id="main-content" class="d-flex flex-column align-items-center" style="display: none;">
+      <h1 id="main-title" class="main-title">Stop RUscism Manifesto</h1>
+      <h4 class="sign-link-mobile d-block d-lg-none" id="mobile-link"><a id="mobile-link-external" target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe_Ktzv5LdKCMyrQWy0SdpnSne7KPi5l1EOL42FhFxbmtzJqA/viewform?embedded=true">Click
+          to add your signature</a></h4>
+
+      <!----------------------- EMBED DISPLAYS ----------------------->
+      <div class="container-fluid embed-wrapper">
+        <div class="row h-100">
+          <div class="col-lg-6 col-12 p-0 m-0 h-100 pt-lg-3 ps-lg-3">
+            <!-- Add the PDF viewer container -->
+            <div class="pdf-viewer" id="pdfContainer"></div>
+
+          </div>
+          <div class="col-lg-6 col-12 p-0 m-0 h-100 pt-lg-3 pe-lg-3 d-none d-lg-block">
+            <iframe id="signup-form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe_Ktzv5LdKCMyrQWy0SdpnSne7KPi5l1EOL42FhFxbmtzJqA/viewform?embedded=true"
+              width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+          </div>
         </div>
-        <!----------------------- END OF LANGUAGE POP-UP ----------------------->
-
-        <div id="main-content" class="d-flex flex-column align-items-center" style="display: none;">
-            <h1 id="main-title" class="main-title">Stop RUscism Manifesto</h1>
-
-            <!----------------------- EMBED DISPLAYS ----------------------->
-            <div class="container-fluid  embed-wrapper">
-                <div class="row h-100">
-                    <div class="col-md-6 col-12 p-0 m-0 h-100 pt-md-3 ps-md-3">
-                        <iframe id="manifesto" src="manifestos/Manifesto_EN.pdf" width="100%" height="800  type="
-                            application/pdf"></iframe>
-                    </div>
-                    <div class="col-md-6 col-12 p-0 m-0 h-100 pt-md-3 pe-md-3">
-                        <iframe id="signup-form"
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSe_Ktzv5LdKCMyrQWy0SdpnSne7KPi5l1EOL42FhFxbmtzJqA/viewform?embedded=true"
-                            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-                    </div>
+      </div>
+      <!----------------------- END OF EMBED DISPLAYS ----------------------->
+      <div id="credits-overlay" class="credits-overlay">
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+          <div class="credits-wrapper">
+            <div class="container-fluid p-4">
+              <div class="row">
+                <div class="col-12">
+                  <h5>Credits</h5>
                 </div>
+                <div class="col-12">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequuntur modi voluptate odio
+                  numquam quod provident dolorem ullam non corporis, officia dolore! Numquam optio animi ipsam nisi
+                  veritatis ex mollitia!
+                </div>
+              </div>
             </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid d-flex justify-content-between align-items-center h-100">
+
+          <div class="col-4 text-start">
+            © <span id="current-year"></span>
+          </div>
+          <div class="col-4 text-end">
+            <span id="credits-btn" class="credits-btn"> Credits</span>
+
+          </div>
+
         </div>
 
-        <!----------------------- END OF EMBED DISPLAYS ----------------------->
+      </footer>
+      <script>
 
-        <script src="script.js"></script>
+      </script>
     </div>
 
+  </div>
 </body>
 
 </html>
