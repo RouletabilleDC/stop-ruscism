@@ -109,6 +109,16 @@ footer {
   cursor: pointer;
 }
 
+.text-end {
+  display: inline-block;
+  text-align: right;
+}
+
+.text-start {
+  display: inline-block;
+  text-align: right;
+}
+
 /* Styles for the language pop-up */
 #language-popup {
   display: -webkit-box;
