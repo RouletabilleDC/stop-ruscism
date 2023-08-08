@@ -22,7 +22,7 @@ body {
 }
 
 canvas {
-  max-width: 95vw;
+  max-width: 100vw;
 }
 
 .pdf-viewer {
@@ -45,6 +45,7 @@ footer {
   text-align: center;
   background: rgb(205, 208, 52);
 }
+
 .sign-link-mobile a {
   padding: 0;
   margin: 0;
@@ -61,14 +62,14 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .credits-overlay {
@@ -79,11 +80,11 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 9999;
   display: none;
 }
@@ -98,7 +99,7 @@ footer {
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .credits-btn {
@@ -121,11 +122,11 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 9999;
 }
 
@@ -134,7 +135,7 @@ footer {
   background-color: #ebfa86;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 30px;
   width: 600px;
   max-width: 80%;
@@ -196,11 +197,11 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   top: 0;
   height: 100%;
   width: 100%;
@@ -220,16 +221,20 @@ iframe {
   body {
     overflow: hidden;
   }
+
   .main-title {
     font-size: 48px;
   }
+
   .pdf-viewer {
     overflow: scroll;
     max-height: calc(100% - 58px);
   }
+
   canvas {
     max-width: 45vw;
   }
+
   .sign-link-mobile {
     height: 0;
   }
