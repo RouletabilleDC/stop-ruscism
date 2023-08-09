@@ -29,23 +29,57 @@ canvas {
   overflow: scroll;
   max-height: auto;
 }
+@media only screen and (max-width: 820px) {
+  .pdf-viewer {
+    margin-left: 20px;
+  }
+}
 
 footer {
   width: 100%;
-  height: 60px;
-  background-color: #dddddd;
+  height: 40px;
+  background-color: #4CAF50;
   position: fixed;
   bottom: 0;
+  font-size: large;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
+.footer-secondary-element {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: inherit;
+}
+
+@media only screen and (max-width: 821px) {
+  footer {
+    height: 30px;
+    font-size: small;
+    line-height: 25px;
+  }
+  .col-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-secondary-element {
+    line-height: 25px;
+  }
+}
 .sign-link-mobile {
   width: 100%;
   height: 30px;
   font-size: 18px;
+  font-weight: bold;
   text-align: center;
   background: rgb(205, 208, 52);
 }
-
 .sign-link-mobile a {
   padding: 0;
   margin: 0;
@@ -62,14 +96,14 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .credits-overlay {
@@ -80,37 +114,18 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 9999;
   display: none;
 }
 
-
-.contact-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 9999;
-  display: none;
-}
-
-/* .credits-overlay:hover {
+.credits-overlay:hover {
   cursor: pointer;
 }
-*/
 
 .credits-wrapper {
   width: 90%;
@@ -118,11 +133,11 @@ footer {
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .credits-btn {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .credits-btn:hover {
@@ -151,11 +166,11 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 9999;
 }
 
@@ -164,7 +179,7 @@ footer {
   background-color: #ebfa86;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 30px;
   width: 600px;
   max-width: 80%;
@@ -226,11 +241,11 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   height: 100%;
   width: 100%;
@@ -250,20 +265,16 @@ iframe {
   body {
     overflow: hidden;
   }
-
   .main-title {
     font-size: 48px;
   }
-
   .pdf-viewer {
     overflow: scroll;
     max-height: calc(100% - 58px);
   }
-
   canvas {
     max-width: 45vw;
   }
-
   .sign-link-mobile {
     height: 0;
   }
