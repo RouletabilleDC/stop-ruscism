@@ -290,10 +290,19 @@ iframe {
   margin-bottom: 5px;
   position: absolute;
   bottom: 37px;
-  -webkit-transform: translateX(-125%);
-          transform: translateX(-125%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
+@media (max-width: 768px) {
+  #downloadButton {
+    font-size: 10px;
+    position: sticky;
+    padding: 3px 6px;
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+  }
+}
 .small-button:hover {
   background-color: none;
 }
